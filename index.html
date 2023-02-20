@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <title>Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="level-title">Press Any Key to Start</h1>
+  <h1 id="level-title">Enter your name to Start</h1>
+  <input class="name" type="text" placeholder="Name">
+  <button class="submit-butt" type="submit">Submit</button>
+
   <div class="container">
     <div lass="row">
 
@@ -34,7 +37,7 @@
     </div>
 
   </div>
-
+  <button class="replay" type="reset" onclick="window.location.reload();">Play Again</button>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="game.js"></script>
 </body>

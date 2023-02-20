@@ -20,10 +20,11 @@ function nextSequence() {
     playSound(randomPicked);
 }
 
-function checkIfPressedA() {
-    $(document).keydown(function (event) {
-        if (event.key == 'a')
-            nextSequence();
+function checkIfSubmitted() {
+    $(".submit-butt").click(function () {
+        // if (event.key == 'a')
+        nextSequence();
+        $(".replay").slideUp();
     })
 }
 
@@ -56,7 +57,6 @@ $("#blue").click(function () {
 
 function checkSequence() {
     var lol = 0;
-    // if (clickedPattern.length == colorPattern.length) {
     for (var i = 0; i < clickedPattern.length; i++) {
         if (colorPattern[i] != clickedPattern[i]) {
             gameOver();
@@ -82,8 +82,11 @@ function gameOver() {
     }, 400);
 
     setTimeout(() => {
-        $("body").css("background-color", "#011F3F")
+        $("body").css("background-color", "#011F3F");
+        $(".replay").slideDown();
     }, 600);
+
+
 }
 
 function playSound(buttonColor) {
@@ -103,4 +106,4 @@ function showAnimtion(animatedID) {
     }, 150);
 }
 
-checkIfPressedA();
+checkIfSubmitted();
