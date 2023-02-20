@@ -78,7 +78,7 @@ function gameOver() {
     setTimeout(() => {
         wrongsound.play();
         $("body").css("background-color", "red")
-        $("h1").text("Game Over, Press Any Key to Restart")
+        $("h1").text("Game Over, Play again? Click the button below!")
     }, 400);
 
     setTimeout(() => {
