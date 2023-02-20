@@ -3,11 +3,11 @@ var colorPattern = [];
 var clickedPattern = [];
 var randomNumber;
 var level = 1;
-var greensound = new Audio("sounds/green.mp3");
-var bluesound = new Audio("sounds/blue.mp3");
-var redsound = new Audio("sounds/red.mp3");
-var yellowsound = new Audio("sounds/yellow.mp3");
-var wrongsound = new Audio("sounds/wrong.mp3")
+var greensound = new Audio("/sounds/green.mp3");
+var bluesound = new Audio("/sounds/blue.mp3");
+var redsound = new Audio("/sounds/red.mp3");
+var yellowsound = new Audio("/sounds/yellow.mp3");
+var wrongsound = new Audio("/sounds/wrong.mp3")
 
 function nextSequence() {
     clickedPattern = []
