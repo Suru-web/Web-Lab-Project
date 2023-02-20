@@ -21,10 +21,10 @@ function nextSequence() {
 }
 
 function checkIfSubmitted() {
-    $(".submit-butt").click(function () {
-        // if (event.key == 'a')
+    $(".start-butt").click(function () {
         nextSequence();
         $(".replay").slideUp();
+        $(".start-butt").fadeOut();
     })
 }
 
