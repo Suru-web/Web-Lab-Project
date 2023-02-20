@@ -2,20 +2,22 @@ body {
   text-align: center;
   background-color: #011f3f;
 }
-.name {
+/* .name {
   margin-top: 20px;
   margin-bottom: 50px;
   border-radius: 10px;
   border-width: 5px;
   padding: 10px;
   border-color: white;
-}
+} */
 .submit-butt {
   border-radius: 10px;
   border-width: 5px;
   padding: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
   border-color: white;
-  margin-left: 30px;
+  font-size: 25px;
 }
 .replay {
   border-radius: 10px;
@@ -28,7 +30,7 @@ body {
 #level-title {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
-  /* margin: 5%; */
+  margin: 3%;
   color: #fef2bf;
 }
 
