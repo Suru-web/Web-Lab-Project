@@ -1,15 +1,17 @@
 body {
   text-align: center;
   background-color: #011f3f;
+  font-family: "Press Start 2P", cursive;
 }
-/* .name {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  border-width: 5px;
-  padding: 10px;
-  border-color: white;
-} */
+.intro {
+  color: aliceblue;
+  text-decoration: none;
+}
+.guide {
+  padding-left: 1200px;
+  color: aliceblue;
+  text-decoration: none;
+}
 .start-butt {
   border-radius: 10px;
   border-width: 5px;
