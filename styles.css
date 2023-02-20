@@ -21,13 +21,14 @@ body {
   padding-right: 70px;
   border-color: white;
   font-size: 25px;
+  font-family: "Press Start 2P", cursive;
 }
 .replay {
   border-radius: 10px;
   border-width: 5px;
   padding: 10px;
   border-color: white;
-  /* display: none; */
+  font-family: "Press Start 2P", cursive;
 }
 
 #level-title {
