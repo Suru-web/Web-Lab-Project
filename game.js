@@ -63,7 +63,7 @@ function start() {
         var lol = 0;
         for (var i = 0; i < clickedPattern.length; i++) {
             if (colorPattern[i] != clickedPattern[i]) {
-                lol = 0;
+                gameOver();
                 break;
             }
             else if (clickedPattern.length == colorPattern.length) {
@@ -74,10 +74,6 @@ function start() {
             setTimeout(() => {
                 nextSequence();
             }, 1000);
-        else {
-            gameOver();
-            return;
-        }
 
     }
 
@@ -112,6 +108,6 @@ function gameOver() {
         $("body").css("background-color", "#011F3F");
         $(".replay").slideDown();
     }, 600);
-
+    return 0;
 
 }
